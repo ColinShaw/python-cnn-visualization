@@ -8,6 +8,8 @@ or loss, in a manner that makes some sense to us.  Visualizing regions
 that have significant impact on the result of a network can help us
 learn more about how it interprets the features we present to it.
 
+![Visualization](cnn_visualization.jpg)
+
 This repository is motivated primarily by the paper 
 [Visualizing and Understanding Convolutional Networks](https://arxiv.org/pdf/1311.2901.pdf)
 by Zeiler and Fergus, but also by related papers, such as
