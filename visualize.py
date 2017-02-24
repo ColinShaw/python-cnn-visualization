@@ -53,11 +53,10 @@ def create_video(csv_file, output_filename):
     csv_data = np.genfromtxt(csv_file, delimiter=',', dtype=None)
     total_frames = len(csv_data)
     for i, row in tqdm(enumerate(csv_data), total=total_frames):
-        if i < 5:
-            image_filename = 'training-data/IMG/' + row[0].decode('utf-8').strip()
-            image = load_image(image_filename)
-            frame = process_frame(image)
-            frames.append(frame)
+        image_filename = 'training-data/IMG/' + row[0].decode('utf-8').strip()
+        image = load_image(image_filename)
+        frame = process_frame(image)
+        frames.append(frame)
     video = ImageSequenceClip(frames, fps=15)
     video.write_videofile(output_filename, audio=False)
 
