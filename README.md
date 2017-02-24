@@ -39,8 +39,8 @@ for the convolutional layers worked best.  Normalizing the features to the
 [-1/2, 1/2] interval also trained better.
 
 This takes a _long_ time to run, as for each image there are 1801 
-evaluations of the network.  On my GTX 1060, it takes about 7 seconds
-per frame, or about 250 network evaluations per second, which is more
+evaluations of the network.  On my GTX 1060, it takes about 8 seconds
+per frame, or about 225 network evaluations per second, which is more
 than I expected.  The frame data from the video is from me manually 
 driving the car around the track, so it is a little shaky. You can
 watch `output.mp4` or watch it on [YouTube](https://youtu.be/e7vb43f_ZxM).
@@ -51,6 +51,10 @@ appears to be the case from the result is that the horizon is the most important
 with occasional other regions.  As noted earlier, the training wasn't that 
 great and the car drove shakily at best down the road when driven
 automatically.  Of course different amounts of training, hyperparameters, etc.,
-could result in significantly different results.
-
-
+could result in significantly different results.  Interestingly, fellow Udacity 
+Self-Driving Car student Mengxi Wu, in the Medium article 
+[Self-Driving Car in a Simulator with a Tiny Neural Network](https://medium.com/@xslittlegrass/self-driving-car-in-a-simulator-with-a-tiny-neural-network-13d33b871234#.82g84vogz),
+also depicts visualization indicative of a network that detects somewhat unexpected
+features, though in this case the visualization is of the specific layers
+and it is more clear _how_ the network is mutating the features through
+the layers.  
