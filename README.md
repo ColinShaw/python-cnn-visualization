@@ -45,7 +45,8 @@ evaluations of the network.  On my GTX 1060, it takes about 8 seconds
 per frame, or about 225 network evaluations per second, which is more
 than I expected.  The frame data from the video is from me manually 
 driving the car around the track, so it is a little shaky. You can
-watch `output.mp4` or watch it on [YouTube](https://youtu.be/e7vb43f_ZxM).
+watch `output.mp4` or watch it on [YouTube](https://youtu.be/e7vb43f_ZxM).  The
+video is 240x120, so it looks horendous on YouTube.
 
 The results are not quite what I would have expected.  One would think 
 that the lane borders would be more important to the network.  What 
